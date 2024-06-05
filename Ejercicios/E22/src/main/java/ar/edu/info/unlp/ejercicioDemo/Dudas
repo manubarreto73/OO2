@@ -1,0 +1,19 @@
+Dudas
+
+-> No sé si hace falta crear las diferentes instancias de sanguches. Al fin y al cabo todas tienen ingredientes,
+y estoy decidiendo qué ingredientes pasarle en cada builder. No veo por qué las necesitaría.
+
+-> La lista de ingredientes que va en la clase abstracta Builder, la pongo en protected o le agrego un método
+protected Add() a Builder
+
+-> Los ingredientes son una cantidad definida con nombre y costo específicos, por lo que quizás no es lo mejor 
+que cada vez que se agregue un ingrediente, se cree uno genérico y se le asigne el nombre y costo particular, quizás
+habría que crearles clases. No es un type object pq cada "copia" de ingrediente no guarda nada, son solo clases
+En caso de crear esas clases, no sabría si hacerlas todas de tipo ingrediente o si hacer que haya subclases para 
+principal, aderezo, etc
+
+-> Cómo debería ser el director en este ejercicio? Nos había nombrado tres posibilidades felipe, pero no sé bien
+cuál se busca que hagamos, supongo será o un método en director o un director heredado
+
+-> Qué pasa si quiero mezclar ingredientes de distintos tipos de sanguches? El diagrama que nos dio felipe no lo 
+permite. El enunciado no es idoneo o se tiene que resolver distinto?

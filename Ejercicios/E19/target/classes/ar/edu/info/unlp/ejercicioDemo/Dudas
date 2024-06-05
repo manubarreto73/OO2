@@ -1,0 +1,23 @@
+Dudas
+
+- Vale la pena crear las clases de los personajes como subclases de character?
+
+Podría definir ahí y que sus constructores no requieran recibir los componentes, por otro lado,
+los personajes no difieren en nada más que sus componentes, haría que tenga que agregar dos clases
+cada vez que creo un personaje (el creator y la clase del personaje)
+
+Cómo resolver los cruces entre armors/weapons:
+
+-> Resolverlo desde afuera, por ej, con una clase cruces que tenga una matriz con la información de los
+cruces, en ese caso armors y weapons podrían ser solo strings o ids.
+Suena bastante a feature envy
+
+-> Resolverlo con un métodos, sea en armor o en weapon, que reciban contra qué armor/weapon se enfrentan y
+te devuelvan cuánto daño ocurrió realmente. En este caso requerirías una jerarquía, definiendo cada tipo de
+armadura, y requerirías métodos para cada arma que te devuelvan cuánto daño ocurrió. Si agregas más armas, 
+tenés que agregar ese método a cada clase de armadura. Suena un poco más laborioso extender o modificar el
+sistema de combate una vez creado
+
+-> No me gusta que no poder inicializar la lista con habilidades pero es una boludez
+
+(Preguntar en clase)
